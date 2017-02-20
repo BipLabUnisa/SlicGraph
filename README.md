@@ -16,6 +16,7 @@ project.
     In International Workshop on Fuzzy Logic and Applications (pp. 260-269). 
     Springer, Cham.
 
+
 Copyright (c) 2017, BIPLab, Biometric and Image Processing Laboratory
 All rights reserved.
 
