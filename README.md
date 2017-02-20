@@ -1,2 +1,2 @@
 # SlicGraph
-Graph-based representation of SLIC clusters.
+Graph-based representation of SLIC clusters centroids.
