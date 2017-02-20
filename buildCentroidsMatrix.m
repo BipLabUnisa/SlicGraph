@@ -1,12 +1,11 @@
-function [Centroids] = buildCentroidsMatrix(NumLabels, s)
 
-    %INPUT:
-    % NumLabels: number of the centroids detected by slic
-    % s: the output from region props
-    
-    %OUTPUT:
-    % Centroids: NumLabels x 3 Matrix which contains the index of the
-    %   centroid and its coords
+%INPUT:
+%   NumLabels: number of the centroids detected by slic
+%   s: the output from region props
+
+%OUTPUT:
+%   Centroids: NumLabels x 3 Matrix which contains the index of the
+%   centroid and its coords
     
     
     % Please cite the following paper, if you use this software in your
@@ -42,6 +41,8 @@ function [Centroids] = buildCentroidsMatrix(NumLabels, s)
 % ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 % POSSIBILITY OF SUCH DAMAGE.
     
+function [Centroids] = buildCentroidsMatrix(NumLabels, s)
+
     Centroids = zeros(NumLabels, 3);
     cen = cat(1, s.Centroid);
     for i=1:NumLabels

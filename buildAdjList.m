@@ -1,17 +1,15 @@
-function [Adj_list, Adj_matrix] = buildAdjList(L, NumLabels)
-
-    % INPUT
-    % L: the slic clustered regions
-    % NumLabels: the number of clusters detected by slic
+% INPUT
+%   L: the slic clustered regions
+%   NumLabels: the number of clusters detected by slic
     
-    % OUTPUT
-    % Adj_list: the adjacency list. each edge is represented by the couple
-    % of vertices i and j
-    % Adj_matrix: the adjacency matrix. each edge is represented by a 1 in
-    % position i, j
+% OUTPUT
+%   Adj_list: the adjacency list. each edge is represented by the couple
+%   of vertices i and j
+%   Adj_matrix: the adjacency matrix. each edge is represented by a 1 in
+%   position i, j
 
     
-    % Please cite the following paper, if you use this software in your
+% Please cite the following paper, if you use this software in your
 % project.
 
 %     Abate, A.F., Barra, S., D'Aniello, F., & Narducci, F. (2016, December). 
@@ -43,6 +41,8 @@ function [Adj_list, Adj_matrix] = buildAdjList(L, NumLabels)
 % CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 % ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 % POSSIBILITY OF SUCH DAMAGE.
+
+function [Adj_list, Adj_matrix] = buildAdjList(L, NumLabels)
     
     Adj_matrix = zeros(NumLabels, NumLabels); 
 

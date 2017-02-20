@@ -1,5 +1,3 @@
-function plotGraph(Centroids, Adj_list)
-  
 % Please cite the following paper, if you use this software in your
 % project.
 
@@ -34,6 +32,8 @@ function plotGraph(Centroids, Adj_list)
 % POSSIBILITY OF SUCH DAMAGE.
 
 
+function plotGraph(Centroids, Adj_list)
+  
     for i=1:size(Centroids, 1)
         if (Centroids(i,1)~=0)
             plot(Centroids(i, 2), Centroids(i, 3), '*');

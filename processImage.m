@@ -1,5 +1,3 @@
-function [Adj_list, s, Centroids, L, NumLabels, Adj_matrix]=processImage(I, numClusters) 
-    
 % Please cite the following paper, if you use this software in your
 % project.
 % 
@@ -32,6 +30,8 @@ function [Adj_list, s, Centroids, L, NumLabels, Adj_matrix]=processImage(I, numC
 % CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 % ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 % POSSIBILITY OF SUCH DAMAGE.
+
+function [Adj_list, s, Centroids, L, NumLabels, Adj_matrix]=processImage(I, numClusters) 
 
     [L,NumLabels] = superpixels(I,numClusters, 'Method', 'slic', 'NumIterations', 100); 
     [Adj_list, Adj_matrix] = buildAdjList(L, NumLabels);

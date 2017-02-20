@@ -1,8 +1,8 @@
-function [contourImg] = slic_draw_contours(labels, img)
-
 % function [contourImg] = draw_contours(labels, img)
 %
 % David Stutz <david.stutz@rwth-aachen.de>
+
+function [contourImg] = slic_draw_contours(labels, img)
 
     rows = size(img, 1);
     cols = size(img, 2);
