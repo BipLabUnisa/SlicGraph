@@ -37,8 +37,10 @@ function [Adj_list, s, Centroids, L, NumLabels, Adj_matrix]=processImage(I, numC
     [Adj_list, Adj_matrix] = buildAdjList(L, NumLabels);
     s = regionprops(L);
     [Centroids] = buildCentroidsMatrix(NumLabels, s);
-    figure(); imshow(I); 
-    hold on; imshow(slic_draw_contours(L,I)); 
+    figure();
+    clusteredimg = slic_draw_contours(L,I);
+    subplot(1, 2, 1); imshow(I);
+    subplot(1, 2, 2); imshow(clusteredimg);
     hold on; plotGraph(Centroids, Adj_list); 
     
 end
