@@ -1,4 +1,3 @@
-
 %INPUT:
 %   NumLabels: number of the centroids detected by slic
 %   s: the output from region props

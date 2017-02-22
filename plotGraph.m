@@ -1,3 +1,9 @@
+% INPUT
+%   Centroids: NumLabels x 3 Matrix which contains the index of the
+%       centroid and its coords
+%   Adj_list: the adjacency list. each edge is represented by the couple
+%       of vertices i and j
+
 % Please cite the following paper, if you use this software in your
 % project.
 
